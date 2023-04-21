@@ -36,3 +36,31 @@ n = n - 1;
 
 console.log(n);
 
+
+// In Js There Are Five Falsy Valus
+//  They Are : 0, "", NaN, null, Undefined
+
+// Logical Operator == and ===
+// Here is An Example
+
+let personAge = 18
+
+if (personAge === 18) {
+    console.log("Yay! Its Working Perfectly");
+}
+
+// Differcence Between == and ===
+
+// == only checks the value of a Variable and === checks value and type both for a variable
+
+// Example
+
+let a = 18;
+let b = "18"
+
+console.log(Boolean(a == b));  //Answer Will Be True
+console.log(Boolean(a === b)); //Answer Will Be False
+
+// Basic Bollean Logic
+// And(&&), OR(||), Not(!)
+
