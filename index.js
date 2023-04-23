@@ -64,3 +64,6 @@ console.log(Boolean(a === b)); //Answer Will Be False
 // Basic Bollean Logic
 // And(&&), OR(||), Not(!)
 
+// Expression is a piece of code that produce a value
+// Example (3 + 4) is an expression because its produce a value
+// Statement is a bigger piece of code that doesn't produce a value
