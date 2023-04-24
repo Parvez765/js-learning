@@ -17,13 +17,13 @@ function logger() {
 }
 logger()
 
-function foodProcessor(apple, oranges) {
-    const juice = (`Please make ${apple} apple juice and also ${oranges} orange juice`)
-    return juice;
-}
+// function foodProcessor(apple, oranges) {
+//     const juice = (`Please make ${apple} apple juice and also ${oranges} orange juice`)
+//     return juice;
+// }
 
-let appleJuice = foodProcessor(5, 0)
-console.log(appleJuice); // Output: Please make 5 apple juice and also 0 orange juice
+// let appleJuice = foodProcessor(5, 0)
+// console.log(appleJuice); // Output: Please make 5 apple juice and also 0 orange juice
  
 // Function Decleration 
 function clacAge1(birthYear) {
@@ -47,3 +47,17 @@ const arrFun = (a, b) => {
 }
 
 console.log(arrFun(10, 25));
+
+// Function calling from another function
+function cutFruitPieces(fruit) {
+    return fruit * 4
+}
+function foodProcessor(apple, oranges) {
+    const appleJuices = cutFruitPieces(apple)
+    const orangePieces = cutFruitPieces(oranges)
+
+    const juice = (`Please make ${appleJuices} apple juice and also ${orangePieces} orange juice`)
+    return juice;
+}
+
+console.log(foodProcessor(2, 3));
