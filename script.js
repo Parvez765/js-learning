@@ -23,4 +23,19 @@ function foodProcessor(apple, oranges) {
 }
 
 let appleJuice = foodProcessor(5, 0)
- console.log(appleJuice); // Output: Please make 5 apple juice and also 0 orange juice
+console.log(appleJuice); // Output: Please make 5 apple juice and also 0 orange juice
+ 
+// Function Decleration 
+function clacAge1(birthYear) {
+    const age = 2023 - birthYear
+    return age
+}
+const age1 = clacAge1(1998)
+console.log(`I am now ${age1} years old`);
+
+// Function Expression
+const clacAge2 = function (birthYear) {
+    return 2023 - birthYear
+}
+const age2 = clacAge2(1998)
+console.log(`I am now ${age2} years old`);
