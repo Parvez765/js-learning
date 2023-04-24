@@ -39,3 +39,11 @@ const clacAge2 = function (birthYear) {
 }
 const age2 = clacAge2(1998)
 console.log(`I am now ${age2} years old`);
+
+// Arrow Function
+
+const arrFun = (a, b) => {
+    return (a + b)
+}
+
+console.log(arrFun(10, 25));
