@@ -87,3 +87,10 @@ for (let i = 0; i < years.length; i++) {
     console.log(newYear);
     console.log(calcAge(newYear));
 }
+
+// Array Methods
+friends.push("jay") // Push Method Will Add Element At The Last of An Array
+friends.pop() // Pop Method Will remove Element At The Last of An Array
+friends.shift() // Shift Method Will remove Element At The First of An Array
+friends.unshift("Barlie") // UnShift Method Will add Element At The First of An Array
+console.log(friends); 
