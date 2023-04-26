@@ -94,3 +94,5 @@ friends.pop() // Pop Method Will remove Element At The Last of An Array
 friends.shift() // Shift Method Will remove Element At The First of An Array
 friends.unshift("Barlie") // UnShift Method Will add Element At The First of An Array
 console.log(friends); 
+
+console.log(friends.includes("Barlie")); // Includes returns "TRUE" if the element present in array and "FALSE" if the element is absent in the array
