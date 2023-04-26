@@ -61,3 +61,29 @@ function foodProcessor(apple, oranges) {
 }
 
 console.log(foodProcessor(2, 3));
+
+// Introduction to Array
+const friends = ["Micale", "Steven", "Peter"]
+
+// Automatic Count of  last Array Element
+console.log(friends[friends.length - 1]);
+
+const firstName = "Jonas"
+const jonas = [firstName, "Bob", 2023 - 1998, friends]
+console.log(jonas);
+
+// Array Length Calculation
+console.log(jonas.length); // 5
+
+const calcAge = function (birthYear) {
+    return 2023 - birthYear
+}
+
+const years = [2010, 2012, 2014, 2016, 2018]
+
+for (let i = 0; i < years.length; i++) {
+    let newYear = 0;
+    newYear = years[i] 
+    console.log(newYear);
+    console.log(calcAge(newYear));
+}
