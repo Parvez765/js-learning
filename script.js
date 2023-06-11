@@ -1,98 +1,11 @@
-// Strict Mode
-"use strict";
+// Expression is a piece of code that produce a value
+// Statement is a bigger piece of code that is excuted and doesn't produce a value
 
-let hasDriverLicence = false;
-const passTest = true;
+// Coding Challange
 
-if (passTest) hasDriverLicence = true
-if(hasDriverLicence) console.log("I can Drive"); // Without Stict mode output will be nothing but with strict mode it will throw and error
+let bills = 430 // 275- tip: 41.25 bills: 316.25 40- tips: 8 bills: 48 430- tip: 86 bills: 516
+let tip =  bills >= 50 && bills <= 300 ? (bills * 15) / 100 : (bills * 20) / 100
 
-// use strict helps us to prevent accidental error in code and helps us to fix the bug. Also it shows visible error in developer consol which makes our code more efficient to read and write. Also we can to use reserved keyword as variable which will implement in future while using strict mode.
-// Example : interface, private
+let totalBill = bills + tip
+console.log(tip, totalBill);
 
-
-// FUNCTION: A function is a piece of code that we can reuse over and over in our code
-function logger() {
-    console.log("Hello From Function");
-}
-logger()
-
-// function foodProcessor(apple, oranges) {
-//     const juice = (`Please make ${apple} apple juice and also ${oranges} orange juice`)
-//     return juice;
-// }
-
-// let appleJuice = foodProcessor(5, 0)
-// console.log(appleJuice); // Output: Please make 5 apple juice and also 0 orange juice
- 
-// Function Decleration 
-function clacAge1(birthYear) {
-    const age = 2023 - birthYear
-    return age
-}
-const age1 = clacAge1(1998)
-console.log(`I am now ${age1} years old`);
-
-// Function Expression
-const clacAge2 = function (birthYear) {
-    return 2023 - birthYear
-}
-const age2 = clacAge2(1998)
-console.log(`I am now ${age2} years old`);
-
-// Arrow Function
-
-const arrFun = (a, b) => {
-    return (a + b)
-}
-
-console.log(arrFun(10, 25));
-
-// Function calling from another function
-function cutFruitPieces(fruit) {
-    return fruit * 4
-}
-function foodProcessor(apple, oranges) {
-    const appleJuices = cutFruitPieces(apple)
-    const orangePieces = cutFruitPieces(oranges)
-
-    const juice = (`Please make ${appleJuices} apple juice and also ${orangePieces} orange juice`)
-    return juice;
-}
-
-console.log(foodProcessor(2, 3));
-
-// Introduction to Array
-const friends = ["Micale", "Steven", "Peter"]
-
-// Automatic Count of  last Array Element
-console.log(friends[friends.length - 1]);
-
-const firstName = "Jonas"
-const jonas = [firstName, "Bob", 2023 - 1998, friends]
-console.log(jonas);
-
-// Array Length Calculation
-console.log(jonas.length); // 5
-
-const calcAge = function (birthYear) {
-    return 2023 - birthYear
-}
-
-const years = [2010, 2012, 2014, 2016, 2018]
-
-for (let i = 0; i < years.length; i++) {
-    let newYear = 0;
-    newYear = years[i] 
-    console.log(newYear);
-    console.log(calcAge(newYear));
-}
-
-// Array Methods
-friends.push("jay") // Push Method Will Add Element At The Last of An Array
-friends.pop() // Pop Method Will remove Element At The Last of An Array
-friends.shift() // Shift Method Will remove Element At The First of An Array
-friends.unshift("Barlie") // UnShift Method Will add Element At The First of An Array
-console.log(friends); 
-
-console.log(friends.includes("Barlie")); // Includes returns "TRUE" if the element present in array and "FALSE" if the element is absent in the array
