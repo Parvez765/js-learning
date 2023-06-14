@@ -11,13 +11,13 @@ const secondName = logger("Lima")
 // console.log(firstName, secondName);
 
 // Example Two
-function fruitProcessor(apple, orange) {
-    // console.log(apple, orange);
-    const juice = `I Want ${apple} Apple Juice and ${orange} Orange Juice`
-    return juice
-}
+// function fruitProcessor(apple, orange) {
+//     // console.log(apple, orange);
+//     const juice = `I Want ${apple} Apple Juice and ${orange} Orange Juice`
+//     return juice
+// }
 
-const juice = fruitProcessor(5, 3)
+// const juice = fruitProcessor(5, 3)
 // console.log(juice);
 
 // Function Decleration And Expression
@@ -42,4 +42,21 @@ const birthYear = (age) => {
     return 2023 - age
 }
 
-console.log(birthYear(1998));
+// console.log(birthYear(1998));
+
+// Calling One Function From Another Function
+function cutFruitPiece(fruit) {
+    return fruit * 4
+}
+
+
+function fruitProcessor(apple, orange) {
+    // console.log(apple, orange);
+    const applePiece = cutFruitPiece(apple);
+    const orangePiece = cutFruitPiece(orange)
+
+    const juice = `I Want ${applePiece} Apple Juice and ${orangePiece} Orange Juice`
+    return juice
+}
+console.log(fruitProcessor(4, 5));
+
