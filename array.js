@@ -23,7 +23,7 @@ console.log(friends.includes("Jhon")); // return true or false
 // Example
 const calcTip = (value) => {
     if (value >= 50 && value <= 300) {
-            return value * (50/ 100)
+            return value * (15/ 100)
     } else {
         return value * (20 / 100)
         }
